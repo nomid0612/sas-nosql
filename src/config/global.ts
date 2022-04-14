@@ -1,8 +1,9 @@
 export const global: any = {
     db: {
-        url: `mongodb+srv://user:userAdmin@cluster0.daxhv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,
+        url: process.env.URL,
         dbName: 'chess',
         collectionName: 'chess-collection'
     }
 
 }
+
